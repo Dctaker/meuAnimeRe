@@ -1,0 +1,198 @@
+li{
+    list-style: none;
+}
+
+.containerHeader{
+    height: 100px;
+    width: 100%;
+  
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--letra);
+}
+
+.headerMenu{
+    transform: translate(-70px,0px);
+}
+.headerMenu ul{
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.iconMenu{
+    display: none;
+}
+
+.menuMobile{
+    display: none;
+}
+
+.iconBuscar{
+    cursor: pointer;
+}
+
+.containerInputBuscar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    top: -30px;
+    z-index: 50;
+    width: 100vw;
+    background-color: var(--bacgroundModal);
+    
+}
+
+.containerInputBuscar article{
+   position: relative;
+   top: 20px;
+    width: 600px;
+   
+    margin: 0 auto;
+}
+
+.containerInputBuscar .animeResultado{
+    width: 85%;
+    background-color: var(--cabeContainer);
+    color: var(--letra);
+    border-radius: 6px;
+}
+
+.containerInputBuscar .animeResultado ul{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+    padding: 30px 0px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.containerInputBuscar .animeResultado ul li{
+    max-width: 220px;
+    cursor: pointer;
+}
+
+.containerInputBuscar .animeResultado ul li p{
+    margin-top: 8px;
+}
+
+.inputBuscar{
+    padding: 15px 15px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+    color: var(--letra);
+    background-color: var(--cabeContainer);
+    border: none;
+}
+
+.closeInputBuscar{
+   color: var(--letra);
+   position: relative;
+   right: -20px;
+   top: 12px;
+   cursor: pointer;
+}
+
+@media(max-width:950px){
+    .headerMenu ul{
+        display: none;
+    }
+
+    .iconMenu{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menuMobile{
+        display: block;
+        position: relative;
+        top: -100px;
+        font-weight: 600;
+        height: 100vh;
+        width: 100vw;
+        background-color: #212121;
+        background:var(--bacgroundModal);
+        
+        z-index: 5;
+        color: var(--letra);
+
+    }
+
+    .menuMobile ul{
+        position: relative;
+        left: 40%;
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        
+    }
+
+    .menuMobile ul li{
+        cursor: pointer;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+ 
+
+    .closeMenu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+}
+
+.animeResultado{
+    background-color: white;
+}
+
+@media(width:2560px){
+    .containerHeader{
+        padding: 100px;
+    }
+}
+
+
+
+@media(max-width:570px){
+   .logo{
+     max-width: 200px;
+   }
+
+  
+}
+
+@media(max-width:391px){
+    .containerHeader{
+        padding: 30px;
+    }
+
+
+}
+
+@media(max-width:431px){
+    .containerHeader{
+        padding: 30px;
+    }
+
+    .inputBuscar{
+        width: 80%;
+    }
+
+    .containerInputBuscar article{
+        position: relative;
+        left: 20px;
+        
+    }
+}
+
+

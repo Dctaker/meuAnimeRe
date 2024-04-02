@@ -1,0 +1,21 @@
+.container{
+    height: 300px;
+    width: 70%;
+    border: 1px solid red;
+    margin-top: 20px;
+    margin-left: 71px;
+    color: var(--letra);
+}
+
+.parteA{
+    height: 15%;
+    background-color: var(--cabeContainer);
+    padding: 15px;
+}
+
+.parteB{
+    height: 85%;
+    background-color: var(--contContainer);
+    padding: 10px 0px;
+    border: 1px solid red;
+}

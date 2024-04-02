@@ -1,0 +1,35 @@
+.containerDestaque{
+    height: auto;
+    width: 70%;
+  
+    margin-top: 50px;
+    margin-left: 71px;
+    color: var(--letra);
+}
+
+.destaqueA{
+    height: 15%;
+    background: var(--cabeContainer);
+    padding: 15px;
+}
+
+.destaqueA p{
+    font-size: .9rem;
+} 
+
+.destaqueB{
+    height: 85%;
+   background: var(--contContainer);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+
+@media(max-width:1035px){
+    .destaqueB{
+       justify-content: start;
+    }
+}
+
