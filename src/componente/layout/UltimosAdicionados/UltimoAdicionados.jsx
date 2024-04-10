@@ -2,23 +2,20 @@ import styled from './container.module.css'
 import Card from './card/Card'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
-import card1 from './card/ultimos lançamento/attack ep small.png'
-import card2 from './card/ultimos lançamento/hanayome ep small.png'
-import card3 from './card/ultimos lançamento/demon ep small.png'
-import card4 from './card/ultimos lançamento/kaguya ep small.png'
-import card6 from './card/ultimos lançamento/kanojo ep small.png'
-import card7 from './card/ultimos lançamento/konsba sp small.png'
-import card8 from './card/ultimos lançamento/nagatoro ep small.png'
-import card9 from './card/ultimos lançamento/horimya ep small.png'
-import card10 from './card/ultimos adicionados/dragon sup small.png'
+import card1 from '../containerLista/card/ultimos adicionados/boruto small.png'
+import card2 from '../containerLista/card/ultimos adicionados/dragon small.png'
+import card3 from '../containerLista/card/ultimos adicionados/dragon sup small.png'
+import card4 from '../containerLista/card/ultimos adicionados/hanayoome small.png'
+import card6 from '../containerLista/card/ultimos adicionados/juju small.png'
+import card7 from '../containerLista/card/ultimos adicionados/kimi small.png'
+import card8 from '../containerLista/card/ultimos adicionados/naruto small.png'
+import card10 from '../containerLista/card/ultimos adicionados/toradora small.png'
 
 
 
-const Container = ()=>{
+const UltimoAdicionados = ()=>{
 
     
-
-  
     return(
         <>
             <section className={styled.container}> 
@@ -60,9 +57,6 @@ const Container = ()=>{
                              <Card img={card8}/>
                         </SwiperSlide>
 
-                        <SwiperSlide>
-                            <Card img={card9}/>
-                        </SwiperSlide>
 
                     
 
@@ -82,4 +76,4 @@ const Container = ()=>{
 
 
 
-export default Container
+export default UltimoAdicionados

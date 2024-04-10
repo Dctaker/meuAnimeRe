@@ -91,7 +91,7 @@ const Destaque = ()=>{
                     exi ===false ? 
                     <article className={style.destaqueB}>
                         <DestaqueCard img={hanayome} nome="Hanayome"/>
-                       
+                        <DestaqueCard img={pokemon} nome="Pokemon"/>
                         <DestaqueCard img={pokemon} nome="Pokemon"/>
                         <DestaqueCard img={konosubaa} nome="konosuba"/>
                         <DestaqueCard img={nagatoro} nome="Nagatoro"/>
@@ -111,8 +111,12 @@ const Destaque = ()=>{
                         <SwiperSlide>
                             <DestaqueCard img={hanayome} nome="Hanayome"/>
                         </SwiperSlide>
+                       
                         <SwiperSlide>
-                         <DestaqueCard img={kaguya} nome="Kaguya Sama"/>
+                            <DestaqueCard img={pokemon} nome="Pokemon"/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <DestaqueCard img={pokemon} nome="Pokemon"/>
                         </SwiperSlide>
                         <SwiperSlide>
                             <DestaqueCard img={pokemon} nome="Pokemon"/>

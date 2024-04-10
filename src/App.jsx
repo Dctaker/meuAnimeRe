@@ -3,6 +3,7 @@ import './App.module.css'
 import Informativo from './componente/layout/Header/Informativo'
 import Destaque from './componente/layout/destaques/Destaque'
 import Container from './componente/layout/containerLista/Container'
+import UltimoAdicionados from './componente/layout/UltimosAdicionados/UltimoAdicionados'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Informativo/>
       <Destaque/>
       <Container/>
+      <UltimoAdicionados/>
      
     </>
   )

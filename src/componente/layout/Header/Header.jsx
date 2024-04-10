@@ -1,6 +1,6 @@
 import style from './header.module.css'
 import { FiSearch } from "react-icons/fi";
-import { FiMenu,FiCalendar,FiX,FiHeart } from "react-icons/fi";
+import { FiMenu,FiX } from "react-icons/fi";
 import logo from './logo.png'
 import {useState, useEffect} from 'react'
 
@@ -45,14 +45,18 @@ const Header = ()=>{
                <div className={style.logo}>
                     <img src={logo}alt='Logo'/>
                </div>
+
                <nav className={style.headerMenu}>
                     <ul>
                         <li>Inicio</li>
                         <li>Lista de Anime</li>
                         <li>Calendario</li>
-                        <li>Favoritos</li>
+                        <li>
+                        Favoritos
+                        </li>
                     </ul>
                </nav>
+
                <div className={style.containerIconBuscar}> 
                     <FiSearch onClick={showInput}  className={style.iconBuscar} size={30}/>
                </div>
@@ -77,7 +81,7 @@ const Header = ()=>{
           {inputMobile && 
              <section className={style.containerInputBuscar}> 
                     <article>
-                    <   input value={textInput} onChange={(e)=> setTextInput(e.target.value)} placeholder='Digite o nome de um anime' className={style.inputBuscar}/>
+                        <input value={textInput} onChange={(e)=> setTextInput(e.target.value)} placeholder='Digite o nome de um anime' className={style.inputBuscar}/>
                         <FiX onClick={showInput} size={30} className={style.closeInputBuscar}/>
                         
                     </article>
