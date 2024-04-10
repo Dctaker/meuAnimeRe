@@ -1,13 +1,19 @@
-import CardItem from './CardItem'
+
 import styled from './card.module.css'
 
-const Card = ()=>{
+
+
+const Card = (props)=>{
 
 
     return(
         <>
             <section className={styled.container}>
-                <CardItem/>
+               <article>
+                    <img className={styled.imgCardItem} src={props.img} alt='imagem'/>
+                    <p className={styled.episodio}>Nome do episodio </p>
+               </article>
+               
             </section>
         </>
     )

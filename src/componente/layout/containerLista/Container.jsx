@@ -3,86 +3,78 @@ import Card from './card/Card'
 import {useEffect, useState} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 
+import card1 from './card/ultimos adicionados/boruto small.png'
+import card2 from './card/ultimos adicionados/dragon sup small.png'
+import card3 from './card/ultimos adicionados/hanayoome small.png'
+import card4 from './card/ultimos adicionados/juju small.png'
+import card6 from './card/ultimos adicionados/kimi small.png'
+import card7 from './card/ultimos adicionados/naruto small.png'
+import card8 from './card/ultimos adicionados/sword art on  small.png'
+import card9 from './card/ultimos adicionados/toradora small.png'
+import card10 from './card/ultimos adicionados/sword art small.png'
+
 
 
 const Container = ()=>{
 
-    const [pag, setPages] = useState(8)
+    
 
-    useEffect(()=>{
-
-        function handleResize(){
-        if(window.innerWidth < 1150 && window.innerWidth > 930){
-            setPages(4)
-        }
-        else if (window.innerWidth < 930 && window.innerWidth > 720){
-            setPages(3)
-        }
-
-        else if (window.innerWidth < 720 && window.innerWidth > 450){
-            setPages(2)
-        }
-       else{
-        setPages(8)
-       }
-    }
-        window.addEventListener('resize', handleResize)
-        handleResize()
-            return ()=>{
-                window.removeEventListener('resize', handleResize)
-            }   
-    },[])
-
+  
     return(
         <>
             <section className={styled.container}> 
                 <article className={styled.parteA}>
-                    <p>Ultimos Lançamentos</p>
+                    <p className={styled.episodio}>Ultimos Lançamentos</p>
                 </article>
+
+
                 <article className={styled.parteB}>
                    <Swiper 
-                   slidesPerView={pag}
+                   slidesPerView={5}
                    navigation
                    >
                         <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Card/>
+                            <Card img={card1}/>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <Card/>
+                            <Card img={card2}/>
                         </SwiperSlide>
+
                         <SwiperSlide>
-                            <Card/>
+                             <Card img={card3}/>
                         </SwiperSlide>
+
                         <SwiperSlide>
-                            <Card/>
+                             <Card img={card4}/>
                         </SwiperSlide>
+
                         <SwiperSlide>
-                            <Card/>
+                            <Card img={card6}/>
                         </SwiperSlide>
+
+                        <SwiperSlide>
+                         <Card img={card7}/>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                             <Card img={card8}/>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <Card img={card9}/>
+                        </SwiperSlide>
+
+                    
+
+                        <SwiperSlide>
+                             <Card img={card10}/>
+                        </SwiperSlide>
+
                    </Swiper>
                 </article>
+
+
             </section>
         </>
     )

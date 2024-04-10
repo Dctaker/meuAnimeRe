@@ -25,9 +25,8 @@ body{
   width: 100vw;
   font-family: Helvetica;
   background-color: var(--back);
-
- 
-  
+  overflow-x: hidden;
+  margin-bottom: 500px;
 }
 
 input{

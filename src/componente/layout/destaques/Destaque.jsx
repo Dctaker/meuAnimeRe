@@ -1,7 +1,7 @@
 import style from './destaque.module.css'
 import DestaqueCard from './DestaqueCard'
 import hanayome from './img/hanayome small.png'
-import kaguya from './img/Kaguya small.png'
+
 import pokemon from './img/pokemon-2019 small.png'
 import konosubaa from './img/konosuba 1 small.png'
 import nagatoro from './img/nagatoro 1 small.png'
@@ -91,7 +91,7 @@ const Destaque = ()=>{
                     exi ===false ? 
                     <article className={style.destaqueB}>
                         <DestaqueCard img={hanayome} nome="Hanayome"/>
-                        <DestaqueCard img={kaguya} nome="Kaguya Sama"/>
+                       
                         <DestaqueCard img={pokemon} nome="Pokemon"/>
                         <DestaqueCard img={konosubaa} nome="konosuba"/>
                         <DestaqueCard img={nagatoro} nome="Nagatoro"/>

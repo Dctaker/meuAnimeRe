@@ -1,7 +1,19 @@
 .container{
-    max-width: 150px;
-    min-width: 100px;
-    height: 230px;
-    border: 1px solid green;
+    max-width: 240px;
+    
+    height: 180px;
+   
     margin: 0px 10px;
+}
+
+
+.imgCardItem{
+   
+    width: 100%;
+    height: 85%;
+}
+
+.episodio {
+    font-size: .78578rem;
+    margin-top: 5px;
 }

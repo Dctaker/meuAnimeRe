@@ -1,7 +1,7 @@
 .container{
-    height: 300px;
-    width: 70%;
-    border: 1px solid red;
+    height: 270px;
+    width: 80%;
+   
     margin-top: 20px;
     margin-left: 71px;
     color: var(--letra);
@@ -17,5 +17,5 @@
     height: 85%;
     background-color: var(--contContainer);
     padding: 10px 0px;
-    border: 1px solid red;
+    
 }
