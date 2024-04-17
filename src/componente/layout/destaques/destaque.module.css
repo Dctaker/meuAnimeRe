@@ -5,6 +5,7 @@
     margin-top: 50px;
     margin-left: 71px;
     color: var(--letra);
+    position: relative;
 }
 
 .destaqueA{

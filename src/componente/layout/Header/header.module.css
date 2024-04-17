@@ -11,6 +11,7 @@ li{
     justify-content: space-between;
     align-items: center;
     color: var(--letra);
+    
 }
 
 .headerMenu{
@@ -36,30 +37,32 @@ li{
 }
 
 .containerInputBuscar{
+    
     position: absolute;
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
-    top: -30px;
+    top: -10px;
     z-index: 50;
     width: 100vw;
     height: 100vh;
     background-color: var(--bacgroundModal);
-   
+    
     
 }
 
 .containerInputBuscar article{
    position: relative;
-   top: 20px;
+   top: -20px;
     width: 600px;
-   
+  
     margin: 0 auto;
 }
 
 .containerInputBuscar .animeResultado{
-    width: 85%;
+    width: 87%;
+    
     background-color: var(--cabeContainer);
     color: var(--letra);
     border-radius: 6px;

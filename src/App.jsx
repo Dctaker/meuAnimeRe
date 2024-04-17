@@ -1,9 +1,8 @@
 import Header from './componente/layout/Header/Header'
 import './App.module.css'
-import Informativo from './componente/layout/Header/Informativo'
-import Destaque from './componente/layout/destaques/Destaque'
-import Container from './componente/layout/containerLista/Container'
-import UltimoAdicionados from './componente/layout/UltimosAdicionados/UltimoAdicionados'
+import Main from './pages/main'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Error404 from './pages/Error404'
 
 function App() {
 
@@ -11,11 +10,14 @@ function App() {
   return (
     <>
       <Header/>
-      <Informativo/>
-      <Destaque/>
-      <Container/>
-      <UltimoAdicionados/>
-     
+      <BrowserRouter>
+          <Routes>
+              <Route path="/" element={<Main/>}/>
+              <Route path="*" element={<Error404/>}/>
+          </Routes>
+      </BrowserRouter>
+      
+  
     </>
   )
 }
